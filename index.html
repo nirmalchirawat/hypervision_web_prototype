@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypervision | UPES Student Technology Society</title>
+    <meta name="description" content="Applications are open for students who want to build, learn, collaborate and contribute to technology-driven projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand-group">
+                <a href="#" class="nav-brand">HYPERVISION</a>
+                <span class="nav-brand-sub">UPES</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#application" class="nav-link">APPLICATION</a>
+                <a href="#application" class="nav-cta">APPLY NOW</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#about" class="mobile-nav-link">ABOUT</a>
+            <a href="#application" class="mobile-nav-link">APPLICATION</a>
+            <a href="#application" class="mobile-nav-link cta-link">APPLY NOW</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">UPES STUDENT TECHNOLOGY SOCIETY</span>
+                <h1 class="headline">HYPERVISION</h1>
+                <h2 class="sub-headline">
+                    <span>BUILD.</span><br>
+                    <span>COLLABORATE.</span><br>
+                    <span>CREATE.</span>
+                </h2>
+                <p class="hero-copy">Applications are open for students who want to build, learn, collaborate and contribute to technology-driven projects.</p>
+                <div class="hero-actions-container">
+                    <div class="hero-actions">
+                        <a href="#application" class="btn btn-primary">BEGIN APPLICATION</a>
+                        <a href="#about" class="btn btn-secondary">LEARN MORE</a>
+                    </div>
+                    <p class="hero-hint">A few minutes. One application.</p>
+                </div>
+            </div>
+            <div class="hero-background" aria-hidden="true">
+                <div class="grid-overlay"></div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-header">
+                    <h2>MORE THAN A TECH SOCIETY.</h2>
+                    <p>Hypervision is a student technology community where students collaborate, experiment, build projects, learn from one another, and turn ideas into real work.</p>
+                </div>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <h3>BUILD</h3>
+                        <p>Work on ideas and turn them into real projects.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>LEARN</h3>
+                        <p>Develop skills through experimentation and collaboration.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>CONTRIBUTE</h3>
+                        <p>Bring your perspective and help the community grow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="application-section" id="application">
+            <div class="container application-container">
+                <div class="application-header">
+                    <h2>READY TO JOIN HYPERVISION?</h2>
+                    <p>Tell us a little about yourself.</p>
+                    <p class="helper-text">Fields marked with <span class="required-asterisk">*</span> are required.</p>
+                </div>
+                
+                <div class="form-wrapper">
+                    <form id="application-form" novalidate>
+                        
+                        <!-- Fieldset: Personal Information -->
+                        <fieldset>
+                            <legend><span class="legend-number">01 &mdash;</span> Personal Information</legend>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span class="required-asterisk">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" required autocomplete="given-name" aria-required="true" aria-describedby="firstName-error">
+                                    <span class="error-message" id="firstName-error">Please enter your first name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span class="required-asterisk">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" required autocomplete="family-name" aria-required="true" aria-describedby="lastName-error">
+                                    <span class="error-message" id="lastName-error">Please enter your last name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">College Email <span class="required-asterisk">*</span></label>
+                                    <input type="email" id="email" name="email" required autocomplete="email" aria-required="true" aria-describedby="email-error">
+                                    <span class="error-message" id="email-error">Please enter a valid college email address</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sapId">SAP ID <span class="required-asterisk">*</span></label>
+                                    <input type="text" id="sapId" name="sapId" required autocomplete="off" placeholder="9-digit SAP ID" aria-required="true" aria-describedby="sapId-error" maxlength="9">
+                                    <span class="error-message" id="sapId-error">Please enter a valid 9-digit SAP ID</span>
+                                </div>
+                                <div class="form-group full-width-mobile">
+                                    <label for="phone">Phone Number <span class="required-asterisk">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="10-digit mobile number" aria-required="true" aria-describedby="phone-error">
+                                    <span class="error-message" id="phone-error">Please enter a valid 10-digit Indian phone number</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fieldset: Academic Information -->
+                        <fieldset>
+                            <legend><span class="legend-number">02 &mdash;</span> Academic Information</legend>
+                            <!-- Note: Dropdown options are placeholders and subject to official recruitment categories -->
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="school">School / Department <span class="required-asterisk">*</span></label>
+                                    <select id="school" name="school" required aria-required="true" aria-describedby="school-error">
+                                        <option value="" disabled selected>Select your school</option>
+                                        <option value="School of Computer Science">School of Computer Science</option>
+                                        <option value="School of Engineering">School of Engineering</option>
+                                        <option value="School of Business">School of Business</option>
+                                        <option value="School of Design">School of Design</option>
+                                        <option value="School of Law">School of Law</option>
+                                        <option value="School of Liberal Studies">School of Liberal Studies</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span class="error-message" id="school-error">Please select your school or department</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="year">Year of Study <span class="required-asterisk">*</span></label>
+                                    <select id="year" name="year" required aria-required="true" aria-describedby="year-error">
+                                        <option value="" disabled selected>Select year</option>
+                                        <option value="1">1st Year</option>
+                                        <option value="2">2nd Year</option>
+                                        <option value="3">3rd Year</option>
+                                        <option value="4">4th Year</option>
+                                        <option value="5">5th Year</option>
+                                    </select>
+                                    <span class="error-message" id="year-error">Please select your year of study</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Fieldset: Application -->
+                        <fieldset>
+                            <legend><span class="legend-number">03 &mdash;</span> Application</legend>
+                            
+                            <!-- Note: Dropdown options are placeholders and subject to official recruitment categories -->
+                            <div class="form-group">
+                                <label for="preferredDomain">Preferred Domain <span class="required-asterisk">*</span></label>
+                                <select id="preferredDomain" name="preferredDomain" required aria-required="true" aria-describedby="domain-error">
+                                    <option value="" disabled selected>Select a domain</option>
+                                    <option value="Technical">Technical</option>
+                                    <option value="Design">Design</option>
+                                    <option value="Content">Content</option>
+                                    <option value="Management">Management</option>
+                                    <option value="Marketing / Outreach">Marketing / Outreach</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span class="error-message" id="domain-error">Please select your preferred domain</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="textarea-label-group" for="whyHypervision">
+                                    Why do you want to join Hypervision? <span class="required-asterisk">*</span>
+                                </label>
+                                <textarea id="whyHypervision" name="whyHypervision" rows="4" maxlength="500" required aria-required="true" aria-describedby="whyHypervision-error"></textarea>
+                                <div class="char-count" aria-live="polite"><span id="why-chars">0</span> / 500</div>
+                                <span class="error-message" id="whyHypervision-error">Please tell us why you'd like to join</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="textarea-label-group" for="recentExperience">
+                                    Tell us about something you have built, worked on, or learned recently. 
+                                    <span class="optional">(Optional)</span>
+                                </label>
+                                <textarea id="recentExperience" name="recentExperience" rows="4" maxlength="500"></textarea>
+                                <div class="char-count" aria-live="polite"><span id="recent-chars">0</span> / 500</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="portfolioUrl">
+                                    Portfolio / GitHub / LinkedIn URL 
+                                    <span class="optional">(Optional)</span>
+                                </label>
+                                <input type="url" id="portfolioUrl" name="portfolioUrl" autocomplete="url" placeholder="https://..." aria-describedby="portfolio-error">
+                                <span class="error-message" id="portfolio-error">Please enter a valid URL</span>
+                            </div>
+                        </fieldset>
+
+                        <!-- Consent -->
+                        <div class="form-group consent-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="consent-error">
+                                <span class="checkbox-custom"></span>
+                                I confirm that the information provided above is accurate and I am happy for the Hypervision team to contact me regarding this application.
+                            </label>
+                            <span class="error-message" id="consent-error">You must confirm to proceed</span>
+                        </div>
+
+                        <!-- Global Inline Error (e.g. for Duplicates) -->
+                        <div id="global-error" class="global-error hidden" aria-live="assertive"></div>
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                                <span class="btn-text">
+                                    SUBMIT APPLICATION
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-icon">
+                                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="btn-loader" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Success State Component -->
+                    <div id="success-state" class="form-feedback-state hidden" aria-hidden="true">
+                        <div class="feedback-icon success-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>APPLICATION RECEIVED</h3>
+                        <p>Thank you for applying to Hypervision.<br>Your application has been received successfully.</p>
+                        <p class="feedback-subtext">If shortlisted, the team will contact you using the details provided.</p>
+                        <button type="button" class="btn btn-secondary reset-btn" id="reset-success-btn">SUBMIT ANOTHER RESPONSE</button>
+                    </div>
+
+                    <!-- Error State Component -->
+                    <div id="error-state" class="form-feedback-state hidden" aria-hidden="true">
+                        <div class="feedback-icon error-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>WE COULDN'T SUBMIT YOUR APPLICATION.</h3>
+                        <p id="error-state-message">Your information has not been lost. Please try again.</p>
+                        <button type="button" class="btn btn-secondary reset-btn" id="reset-error-btn">TRY AGAIN</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>HYPERVISION</h2>
+                <div class="footer-brand-sub">UPES</div>
+                <p>Student Technology Society</p>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Hypervision
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
